@@ -11,7 +11,7 @@ def main():
         if not ret:
             break
         frame = cv2.flip(frame, 1)
-
+        # frame = cv2.rotate(frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
         data = tracker.update(frame)
 
         # Draw landmarks
